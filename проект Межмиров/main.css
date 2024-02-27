@@ -36,14 +36,8 @@ p {
   
 }
 
-.custom-btn {
-    width: 77%;
-    height: auto;
-    color: #d1770f;
-    margin-top: 2%;
-    font-family: sans-serif;
-    font-size: 100%;
-    font-weight: bold;
+
+.button {
     cursor: pointer;
     transition: all 0.3s ease;
     position: relative;
@@ -52,21 +46,42 @@ p {
      7px 7px 20px 0px rgba(0,0,0,.1),
      4px 4px 5px 0px rgba(0,0,0,.1);
     outline: none;
+    margin-right:7%;
   }
-  .btn-1 {
+
+  .button p {
+    color: #af0058;
+    text-align: center;
+    padding-right: 15%;
+    font-family: sans-serif;
+    font-size: 100%;
+    font-weight: bold;
+  }
+  
+  .button a {
+    text-decoration: none;
+  }
+
+  .button img {
+    width: 90%;
+    height: auto;
+    padding-left: 5%;
+    padding-top: 2%;
+  }
+  
+  .button {
   background: linear-gradient(0deg, #fff2d9 0%, #ff86c9 45%, #242036 100%);
     line-height: 42px;
-    padding: 0;
     border: none;
   }
-  .btn-1 span {
+  .button span {
     position: relative;
     display: block;
     width: 100%;
     height: 100%;
   }
-  .btn-1:before,
-  .btn-1:after {
+  .button:before,
+  .button:after {
     position: absolute;
     content: "";
     right: 0;
@@ -74,26 +89,26 @@ p {
     background: #ff86c9;
     transition: all 0.3s ease;
   }
-  .btn-1:before{
+  .button:before{
      height: 0%;
      width: 2px;
   }
-  .btn-1:after {
+  .button:after {
     width: 0%;
     height: 2px;
   }
-  .btn-1:hover{
+  .button:hover{
     color: #ff9bcd;
     background: transparent;
   }
-  .btn-1:hover:before {
+  .button:hover:before {
     height: 100%;
   }
-  .btn-1:hover:after {
+  .button:hover:after {
     width: 100%;
   }
-  .btn-1 span:before,
-  .btn-1 span:after {
+  .button span:before,
+  .button span:after {
     position: absolute;
     content: "";
     left: 0;
@@ -101,297 +116,114 @@ p {
     background: #ff86c9;
     transition: all 0.3s ease;
   }
-  .btn-1 span:before {
+  .button span:before {
     width: 2px;
     height: 0%;
   }
-  .btn-1 span:after {
+  .button span:after {
     height: 2px;
     width: 0%;
   }
-  .btn-1 span:hover:before {
-    height: 100%;
+  .button span:hover:before {
+    height: 103.5%;
   }
-  .btn-1 span:hover:after {
+  .button span:hover:after {
     width: 100%;
   }
-  .custom-btn img {
-    padding-top: 1%;
-    width: 90%; 
-    height: auto; 
-}
 
-.custom-btn1 {
-  width: 80%;
-  height: auto;
-  color: #2b4d30;
-  margin-top: 2%;
-  padding-right: 5%;
-  font-family: sans-serif;
-  font-size: 100%;
-  font-weight: bold;
-  background: transparent;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
-  display: inline-block;
-   box-shadow:inset 2px 2px 2px 0px rgba(24, 22, 36, 0.507),
-   7px 7px 20px 0px rgba(0,0,0,.1),
-   4px 4px 5px 0px rgba(0,0,0,.1);
-  outline: none;
-}
-.btn-2 {
-background: linear-gradient(0deg, #e3ff95 0%, #a3ffe0 45%, #a6affc 100%);
-  line-height: 42px;
-  padding: 0;
-  border: none;
-}
-.btn-2 span {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-.btn-2:before,
-.btn-2:after {
-  position: absolute;
-  content: "";
-  right: 0;
-  bottom: 0;
-  background: #81a10a;
-  transition: all 0.3s ease;
-}
-.btn-2:before{
-   height: 0%;
-   width: 2px;
-}
-.btn-2:after {
-  width: 0%;
-  height: 2px;
-}
-.btn-2:hover{
-  color: #e9ff9b;
-  background: transparent;
-}
-.btn-2:hover:before {
-  height: 100%;
-}
-.btn-2:hover:after {
-  width: 100%;
-}
-.btn-2 span:before,
-.btn-2 span:after {
-  position: absolute;
-  content: "";
-  left: 0;
-  top: 0;
-  background: #81a10a;
-  transition: all 0.3s ease;
-}
-.btn-2 span:before {
-  width: 2px;
-  height: 0%;
-}
-.btn-2 span:after {
-  height: 2px;
-  width: 0%;
-}
-.btn-2 span:hover:before {
-  height: 100%;
-}
-.btn-2 span:hover:after {
-  width: 100%;
-}
-.custom-btn1 img {
-  padding-top: 1%;
-  width: 90%; 
-  height: auto; 
-}
+  .btn-2 {
+    background: linear-gradient(0deg, #d9ffb5 0%, #63fcc1 45%, #0686b9 100%);
+  }
 
-.custom-btn2 {
-  width: 91%;
-  height: auto;
-  color: #ff9eae;
-  margin-top: 2%;
-  font-family: sans-serif;
-  font-size: 100%;
-  font-weight: bold;
-  background: transparent;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
-  display: inline-block;
-   box-shadow:inset 2px 2px 2px 0px rgba(24, 22, 36, 0.507),
-   7px 7px 20px 0px rgba(0,0,0,.1),
-   4px 4px 5px 0px rgba(0,0,0,.1);
-  outline: none;
-}
-.btn-3 {
-background: linear-gradient(0deg, #130f0f 0%, #411414 45%, #f85454 100%);
-  line-height: auto;
-  padding: 0;
-  border: none;
-}
-.btn-3 span {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-.btn-3:before,
-.btn-3:after {
-  position: absolute;
-  content: "";
-  right: 0;
-  bottom: 0;
-  background: #640808;
-  transition: all 0.3s ease;
-}
-.btn-3:before{
-   height: 0%;
-   width: 2px;
-}
-.btn-3:after {
-  width: 0%;
-  height: 2px;
-}
-.btn-3:hover{
-  color: #9e1a1a;
-  background: transparent;
-}
-.btn-3:hover:before {
-  height: 100%;
-}
-.btn-3:hover:after {
-  width: 100%;
-}
-.btn-3 span:before,
-.btn-3 span:after {
-  position: absolute;
-  content: "";
-  left: 0;
-  top: 0;
-  background: #640808;
-  transition: all 0.3s ease;
-}
-.btn-3 span:before {
-  width: 2px;
-  height: 0%;
-}
-.btn-3 span:after {
-  height: 2px;
-  width: 0%;
-}
-.btn-3 span:hover:before {
-  height: 100%;
-}
-.btn-3 span:hover:after {
-  width: 100%;
-}
-.custom-btn2 img {
-  padding-top: 1%;
-  width: 90%; 
-  height: auto; 
-}
+  .btn-2 p {
+    color: rgb(3, 151, 132);
+  }
 
+  .btn-2:before,
+  .btn-2:after {
+    background: #cdffab;
+  }
 
-.custom-btn3 {
-  width: 81%;
-  height: auto;
-  color: #ffffff;
-  margin-top: 2%;
-  margin-left: 10%;
-  font-family: sans-serif;
-  font-size: 100%;
-  font-weight: bold;
-  background: transparent;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
-  display: inline-block;
-   box-shadow:inset 2px 2px 2px 0px rgba(24, 22, 36, 0.507),
-   7px 7px 20px 0px rgba(0,0,0,.1),
-   4px 4px 5px 0px rgba(0,0,0,.1);
-  outline: none;
-}
-.btn-4 {
-background: linear-gradient(0deg, #1a1a1a 0%, #757575 45%, #ececec 100%);
-  line-height: 42px;
-  padding: 0;
-  border: none;
-}
-.btn-4 span {
-  position: relative;
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-.btn-4:before,
-.btn-4:after {
-  position: absolute;
-  content: "";
-  right: 0;
-  bottom: 0;
-  background: #2b2b2b;
-  transition: all 0.3s ease;
-}
-.btn-4:before{
-   height: 0%;
-   width: 2px;
-}
-.btn-4:after {
-  width: 0%;
-  height: 2px;
-}
-.btn-4:hover{
-  color: #969696;
-  background: transparent;
-}
-.btn-4:hover:before {
-  height: 100%;
-}
-.btn-4:hover:after {
-  width: 100%;
-}
-.btn-4 span:before,
-.btn-4 span:after {
-  position: absolute;
-  content: "";
-  left: 0;
-  top: 0;
-  background: #2b2b2b;
-  transition: all 0.3s ease;
-}
-.btn-4 span:before {
-  width: 2px;
-  height: 0%;
-}
-.btn-4 span:after {
-  height: 2px;
-  width: 0%;
-}
-.btn-4 span:hover:before {
-  height: 100%;
-}
-.btn-4 span:hover:after {
-  width: 100%;
-}
-.custom-btn3 img {
-  padding-top: 1%;
-  width: 90%; 
-  height: auto; 
-}
+  .btn-2 :hover{
+    color: #cdffab;
+  }
 
-.zaebal{
-  padding-top: 6%;
-  padding-bottom: 3%;
-}
+  .btn-2 span:before,
+  .btn-2 span:after {
+    background: #cdffab;
+  }
 
+  .btn-3 {
+    background: linear-gradient(0deg, #ffc98c 10%, #ff5100, #290000 100%);
+  }
+
+  .btn-3 p {
+    color: #ff843d;
+  }
+
+  .btn-3:before,
+  .btn-3:after {
+    background: #ff5353;
+  }
+
+  .btn-3 :hover{
+    color: #ff5353;
+  }
+
+  .btn-3 span:before,
+  .btn-3 span:after {
+    background: #ff5353;
+  }
+
+  .btn-4 {
+    background: linear-gradient(0deg, #ffffff 10%, #838383 30%, #000000 100%);
+  }
+
+  .btn-4 p {
+    color: #616161;
+  }
+
+  .btn-4:before,
+  .btn-4:after {
+    background: #9c9c9c;
+  }
+
+  .btn-4 :hover{
+    color: #9c9c9c;
+  }
+
+  .btn-4 span:before,
+  .btn-4 span:after {
+    background: #9c9c9c;
+  }
+  
 .line{
   display: flex;
   align-items: center;
   width: 70%;
   margin-left: 15%;
+}
+
+.line2{
+  display: flex;
+  margin-left: 20%;
+}
+
+.anotherButt{
+  width: 15%;
+  height: 5%;
+}
+
+.anotherButt a{
+  text-decoration: none;
+}
+
+.anotherButt p{
+  white-space: nowrap;
+}
+
+.anotherButt p:hover {
+  color: #a8e4ff;
 }
 
 .description {
