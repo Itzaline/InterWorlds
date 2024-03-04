@@ -3,7 +3,7 @@ body {
 }
 
 h1 {
-    color: #b7d2e9;
+    color: #ffcdac;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     margin-top: 5%;
@@ -66,7 +66,7 @@ h1 {
     transition: all 0.3s ease;
     position: relative;
     display: inline-block;
-     box-shadow:inset 2px 2px 2px 0px rgba(24, 22, 36, 0.507),
+     box-shadow:inset 2px 2px 2px 0px rgba(24, 22, 36, 0.61),
      7px 7px 20px 0px rgba(0,0,0,.1),
      4px 4px 5px 0px rgba(0,0,0,.1);
     outline: none;
@@ -74,7 +74,7 @@ h1 {
   }
 
   .button p {
-    color: #cf86ff;
+    color: #3b065f;
     text-align: center;
     font-family: sans-serif;
     font-size: 90%;
@@ -96,7 +96,7 @@ h1 {
   }
   
   .button {
-  background: linear-gradient(0deg, #1c0a38 0%, #cf86ff 45%, #ffa4ca 100%);
+  background: linear-gradient(0deg, #edb1ff 0%, #6e1ca5 45%, #ff7171 100%);
     line-height: 42px;
     border: none;
   }
@@ -127,6 +127,11 @@ h1 {
     color: #cf86ff;
     background: transparent;
   }
+
+  .button:hover p {
+    color: #cf86ff;
+  }
+
   .button:hover:before {
     height: 100%;
   }
@@ -199,4 +204,48 @@ h1 {
   .btn-3 span:before,
   .btn-3 span:after {
     background: #ffb2c5;
+  }
+
+  .btn-4 {
+    background: linear-gradient(0deg, #310080 0%, #0e0035 60%, #0b011b 100%);
+  }
+
+  .btn-4 p {
+    color: #0b011b;
+  }
+
+  .btn-4:before,
+  .btn-4:after {
+    background: #85b6ff;
+  }
+
+  .btn-4 :hover p{
+    color: #85b6ff;
+  }
+
+  .btn-4 span:before,
+  .btn-4 span:after {
+    background: #85b6ff;
+  }
+
+  .btn-5 {
+    background: linear-gradient(0deg, #b4ffef 0%, #2cddce 50%, #1a352f 100%);
+  }
+
+  .btn-5 p {
+    color: #1a352f;
+  }
+
+  .btn-5:before,
+  .btn-5:after {
+    background: #89ffe5;
+  }
+
+  .btn-5 :hover p{
+    color: #89ffe5;
+  }
+
+  .btn-5 span:before,
+  .btn-5 span:after {
+    background: #89ffe5;
   }
