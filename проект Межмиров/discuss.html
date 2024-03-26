@@ -7,19 +7,41 @@
     <link rel="icon" href="icon.png" type="image/x-icon">
 </head>
 <body>
+    <div class="line">
+        <div class="anotherButt">
+            <a href="main.html"><p>На главную</p></a>
+        </div>
+        <div class="anotherButt">
+            <a href="aboutUs.html"><p>Об авторе</p></a>
+        </div>
+    </div>
     <h1>Зал обсуждений</h1>
     <hr>
-    <form action="/submit_form.php" method="POST">
+    <form id="myForm">
         <label for="name">Имя:</label><br>
         <input type="text" id="name" name="name"><br>
-        
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email"><br>
 
-        <label for="message">Сообщение:</label><br>
+        <label for="message">Комментарий:</label><br>
         <textarea id="message" name="message" rows="4" cols="50"></textarea><br>
 
-        <input type="submit" value="Оставить комментарий">
+        <button type="submit">Отправить</button>
     </form>
+    
+    <div id="display"></div>
+    
+    <script>
+        document.getElementById("myForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Предотвращаем отправку формы по умолчанию
+    
+            var name = document.getElementById("name").value;
+            var message = document.getElementById("message").value;
+    
+            var displayDiv = document.getElementById("display");
+            displayDiv.innerHTML = "<p> " + name + "</p><br><p>" + message + "</p>";
+    
+            // Дополнительная обработка данных, например, отправка на сервер или другие действия, может быть добавлена здесь
+        });
+    </script>
+    
 </body>
 </html>
