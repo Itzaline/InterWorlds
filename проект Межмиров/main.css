@@ -204,9 +204,9 @@ p {
   margin-left: 15%;
 }
 
-.line2{
+.links{
   display: flex;
-  margin-left: 20%;
+  margin-left: 45%;
 }
 
 .anotherButt{
@@ -214,15 +214,22 @@ p {
   height: 5%;
 }
 
-.anotherButt a{
+a{
+  color: #4c00ff;
   text-decoration: none;
 }
 
-.anotherButt p{
-  white-space: nowrap;
-}
 
 .anotherButt p:hover {
+  color: #a8e4ff;
+}
+
+.entrance{
+  display: flex;
+  margin-left: 40%;
+}
+
+.entrance p:hover {
   color: #a8e4ff;
 }
 
